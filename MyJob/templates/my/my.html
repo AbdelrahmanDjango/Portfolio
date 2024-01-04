@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My portfolio{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="base">
+      {% for item in my %}
+      <div class="portfolio-item">
+        <div id="circle">
+          {% if item.image %}
+          <img src="{{ item.image.url }}" />
+          {% endif %}
+        </div>
+        <h1 class="name">{{ item.name }}</h1>
+        <h3>{{ item.summary }}</h3>
+        {% endfor %} 
+      </div>
+      <div>
+        
+      </div>
+      {% for item in link %}
+        {% if item.linkdenin %}
+          &nbsp; &nbsp;  &nbsp; &nbsp;
+          <div class="icon-container">
+            <a href="{{ item.linkdenin }}" target="_blank"><i class="fa-brands fa-linkedin fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+          </div>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+        {% endif %}
+        {% if item.twitter %}
+        <div class="icon-container">
+          <a href="{{ item.twitter }}" target="_blank"><i class="fa-brands fa-twitter fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+        </div>  
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          {% endif %}
+        {% if item.facebook %}
+        <div class="icon-container">
+          <a href="{{ item.facebook }}" target="_blank"><i class="fa-brands fa-facebook fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+        </div>  
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          {% endif %}
+        {% if item.instagram %}
+        <div class="icon-container">
+          <a href="{{ item.instagram }}" target="_blank"><i class="fa-brands fa-instagram fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+        </div>  
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          {% endif %}
+        {% if item.github %}
+        <div class="icon-container">
+          <a href="{{ item.github }}" target="_blank"><i class="fa-brands fa-github fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+        </div>  
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+          {% endif %}
+        {% if item.cv %}
+        <div class="icon-container">
+          <a href="{{ item.cv }}" target="_blank"><i class="fas fa-file-alt fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+        </div>  
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          {% endif %}
+      {% endfor %}
+      <h1 class="about">About:</h1>
+      <p>"I am a backend developer with a focus on Django,
+         equipped with practical experience in handling templates and APIs.
+          My work history includes contributing to projects such as E-Commerce,
+           Blogs, where I've tackled various challenges.
+            I pride myself on my problem-solving skills and a commitment to delivering effective and efficient solutions.
+             If you have a website-related task or problem, I am here to help without excessive praise."
+      </p>
+      <h1>You can call me:
+        <h3>Gmail: azarena818@gmail.com</h3>
+        <h3>Whatsapp: 01202918417</h3>
+      </h1>
+    </div>
+  </body>
+</html>

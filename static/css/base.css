@@ -1,0 +1,80 @@
+.base {
+    background-image: url(dark.jpg);
+    background-repeat: no-repeat;
+    border: 5px solid grey;
+    padding: 20px; 
+    height: 1000px;
+    width: 510px;
+}
+body {
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-repeat:repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#circle {
+    width  : 330px;
+    height : 330px;
+    background: rgb(99, 98, 98);
+    border-radius: 700px;
+    position:relative;
+    margin: 0 auto;
+}
+#circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 9999px;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.portfolio-item {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+h1, h2 {
+    color: rgba(245, 245, 245, 0.565);
+    font-style:oblique;
+}
+
+h3 {
+    color: rgba(245, 245, 245, 0.565);
+    font-style:calc();
+    margin-top: 10px;
+    font-size:larger;
+}
+
+p {
+    color: rgba(245, 245, 245, 0.565);
+    margin-top: 5px; 
+}
+
+.icon-container {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+    transform: scale(1.2);
+}
+
+
+.about{
+    color: rgba(245, 245, 245, 0.603);
+    font-style:var(dark);
+}
