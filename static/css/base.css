@@ -1,10 +1,10 @@
 .base {
-    background-image: url(dark.jpg);
-    background-repeat: no-repeat;
+    background-image: url(last3.jpg);
+    background-repeat:repeat;
     border: 5px solid grey;
     padding: 20px; 
-    height: 1000px;
-    width: 510px;
+    height: 1200px;
+    width: 610px;
 }
 body {
     background-image: url(wallpaperflare.com_wallpaper.jpg);
@@ -83,6 +83,7 @@ p {
 .about{
     color: rgba(245, 245, 245, 0.603);
     font-style:var(dark);
+    text-align: center;
 }
 
 .call {
