@@ -7,6 +7,7 @@
     <title>{% block title %}My portfolio{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   </head>
   <body>
     <div class="base">
@@ -64,17 +65,23 @@
           {% endif %}
       {% endfor %}
       <h1 class="about">About:</h1>
-      <p>"I am a backend developer with a focus on Django,
-         equipped with practical experience in handling templates and APIs.
-          My work history includes contributing to projects such as E-Commerce,
-           Blogs, where I've tackled various challenges.
-            I pride myself on my problem-solving skills and a commitment to delivering effective and efficient solutions.
-             If you have a website-related task or problem, I am here to help without excessive praise."
-      </p>
-      <h1>You can call me:
-        <h3>Gmail: azarena818@gmail.com</h3>
-        <h3>Whatsapp: 01202918417</h3>
-      </h1>
+      <h3>
+
+        "I am a backend developer with a focus on Django,
+           equipped with practical experience in handling templates and APIs.
+            My work history includes contributing to projects such as E-Commerce,
+             Blogs, where I've tackled various challenges.
+              I pride myself on my problem-solving skills and a commitment to delivering effective and efficient solutions.
+               If you have a website-related task or problem, I am here to help without excessive praise."
+      </h3> 
+        
+      
+      <div class="call">
+        <h1 class="size">You can call me:
+          <h3>Gmail: azarena818@gmail.com</h3>
+          <h3>Whatsapp: 01202918417</h3>
+        </h1>
+      </div>
     </div>
   </body>
 </html>
