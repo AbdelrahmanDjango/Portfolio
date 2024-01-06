@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   </head>
-  <body>
+  <body class="scroll">
     <div class="base">
       {% for item in my %}
       <div class="portfolio-item">
@@ -18,7 +18,6 @@
           <img src="{{ item.image.url }}" />
           {% endif %}
         </div>
-        <h1 class="name">{{ item.name }}</h1>
         <h3>{{ item.summary }}</h3>
         {% endfor %} 
       </div>
@@ -30,47 +29,46 @@
         {% if item.linkdenin %}
           &nbsp; &nbsp;  &nbsp; &nbsp;
           <div class="icon-container">
-            <a href="{{ item.linkdenin }}" target="_blank"><i class="fa-brands fa-linkedin fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+            <a href="{{ item.linkdenin }}" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: rgb(148, 148, 148);"></i></a>
           </div>
           &nbsp; &nbsp; &nbsp; &nbsp;
         {% endif %}
         {% if item.twitter %}
         <div class="icon-container">
-          <a href="{{ item.twitter }}" target="_blank"><i class="fa-brands fa-twitter fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+          <a href="{{ item.twitter }}" target="_blank"><i class="fa-brands fa-twitter fa-2x" style="color: rgb(148, 148, 148);"></i></a>
         </div>  
           &nbsp; &nbsp; &nbsp; &nbsp;
           {% endif %}
         {% if item.facebook %}
         <div class="icon-container">
-          <a href="{{ item.facebook }}" target="_blank"><i class="fa-brands fa-facebook fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+          <a href="{{ item.facebook }}" target="_blank"><i class="fa-brands fa-facebook fa-2x" style="color: rgb(148, 148, 148);"></i></a>
         </div>  
           &nbsp; &nbsp; &nbsp; &nbsp;
           {% endif %}
         {% if item.instagram %}
         <div class="icon-container">
-          <a href="{{ item.instagram }}" target="_blank"><i class="fa-brands fa-instagram fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+          <a href="{{ item.instagram }}" target="_blank"><i class="fa-brands fa-instagram fa-2x" style="color: rgb(148, 148, 148);"></i></a>
         </div>  
           &nbsp; &nbsp; &nbsp; &nbsp;
           {% endif %}
         {% if item.github %}
         <div class="icon-container">
-          <a href="{{ item.github }}" target="_blank"><i class="fa-brands fa-github fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+          <a href="{{ item.github }}" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: rgb(148, 148, 148);"></i></a>
         </div>  
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
           {% endif %}
         {% if item.cv %}
         <div class="icon-container">
-          <a href="{{ item.cv }}" target="_blank"><i class="fas fa-file-alt fa-4x" style="color: rgb(148, 148, 148);"></i></a>
+          <a href="{{ item.cv }}" target="_blank"><i class="fas fa-file-alt fa-2x" style="color: rgb(148, 148, 148);"></i></a>
         </div>  
           &nbsp; &nbsp; &nbsp; &nbsp;
           {% endif %}
       {% endfor %}
       </div>
-      <br>
+      <!-- <br> -->
       <hr>
-      <h1 class="about">About:</h1>
-      <h3 class="call">
-
+      <h1 class="call">About:</h1>
+      <h3 class>
         "I am a backend developer with a focus on Django,
            equipped with practical experience in handling templates and APIs.
             My work history includes contributing to projects such as E-Commerce,
@@ -86,7 +84,7 @@
       </div>
       <hr>
       <div class="call">
-        <h1 class="size">You can call me:
+        <h1 class="call">You can call me:
           <h3>Gmail: azarena818@gmail.com</h3>
           <h3>Whatsapp: 01202918417</h3>
         </h1>

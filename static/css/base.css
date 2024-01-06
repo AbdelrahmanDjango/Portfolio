@@ -1,12 +1,17 @@
+.scroll {
+
+    overflow: auto;
+}
 .base {
-    background-image: url(last3.jpg);
+    background-image: url(c6eaf6b88027dabef4eef84bac0df6ec.jpg);
     background-repeat:repeat;
     border: 5px solid grey;
     padding: 20px; 
-    height: 1200px;
-    width: 610px;
+    height: 820px; 
+    width: 400px;
 }
 body {
+    line-height: 1.5;
     background-image: url(wallpaperflare.com_wallpaper.jpg);
     background-repeat:repeat;
     background-size: cover;
@@ -16,12 +21,15 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    min-width: 130px;
+    min-height: 800px;
 }
 
 
 #circle {
-    width  : 330px;
-    height : 330px;
+    width  : 180px;
+    height : 180px;
     background: rgb(99, 98, 98);
     border-radius: 700px;
     position:relative;
@@ -62,7 +70,11 @@ h3 {
     font-style:calc();
     margin-top: 10px;
     font-size:larger;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:12px;
+    text-align: center;
+
+
 }
 
 p {
@@ -76,19 +88,19 @@ p {
 }
 
 .icon-container:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
-.about{
+/* .about{
     color: rgba(245, 245, 245, 0.603);
     font-style:var(dark);
     text-align: center;
-}
+    /* font-size:20px; */
+
+/* }  */
 
 .call {
     text-align: center;
-}
-.size {
-    font-size:45px;
+    
 }
